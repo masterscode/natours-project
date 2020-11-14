@@ -10,6 +10,10 @@
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   position: relative;
+
+  @include respond(phone){
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  }
   /* clip-path: polygon(0 0, 100% 250px, 100% 250px, 0 100%); triangle to the side*/
 
   &__logo-box {
